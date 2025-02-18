@@ -22,16 +22,7 @@ class Ball:
         self.canvas_width = self.canvas.winfo_width()
         
     def draw(self):
-        self.canvas.move(self.id, self.x, self.y)
-        pos = self.canvas.coords(self.id)
-        if pos[1] <= 0:
-            self.y = 3
-        if pos[3] >= self.canvas_height:
-            self.y = -3
-        if pos[0] <= 0:
-            self.x = 3
-        if pos[2] >= self.canvas_width:
-            self.x = -3
+        pass
         
 ball = Ball(canvas, 'red')
 
